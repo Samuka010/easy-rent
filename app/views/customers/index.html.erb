@@ -1,0 +1,14 @@
+<div class="container pt-5">
+
+    <div class="d-flex">
+        <h1 class="flex-grow-1">Lista de Clientes</h1>
+        <div class="list-actions">
+            <%= link_to "Novo", new_customer_path, class: "btn btn-primary"%>
+        </div>
+    </div>
+
+    <div class="d-flex flex-column gap-4">
+        <%= render @customers%>
+    </div>
+
+</div>

@@ -1,0 +1,26 @@
+<div class="card">
+    <%= simple_form_for @customer do |f| %>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-12 col-md-9">
+                    <%= f.input :name %>
+                </div>
+                <div class="col-12 col-md-3">
+                    <%= f.input :dob, html5: true %>
+                </div>
+                <div class="col-12 col-md-3">
+                    <%= f.input :mobile_phone %>
+                </div>
+                <div class="col-12 col-md-3">
+                    <%= f.input :email %>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <div class="d-flex justify-content-between">
+                <%= link_to "Voltar", customers_path, class: "btn btn-secondary"%>
+                <%= f.button :button, class: "btn btn-primary"%>
+            </div>
+        </div>
+    <% end %>
+</div>
